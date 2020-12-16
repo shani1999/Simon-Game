@@ -53,7 +53,7 @@ function nextSequence() {
 
 function playSound(name) {
 
-  var audio = new Audio("sounds/" + name + ".mp3");                              //plays color sound
+  var audio = new Audio(name + ".mp3");                                         //plays color sound
   audio.play();
 
 }
@@ -100,7 +100,7 @@ function checkAnswer() {
 
     $("#level-title").text("Game Over, Press Any Key to Restart");               //changes the heading to game over
 
-    var wrong = new Audio("sounds/wrong.mp3");                                   //plays wrong sound
+    var wrong = new Audio("wrong.mp3");                                          //plays wrong sound
     wrong.play();
 
     $("body").addClass("game-over");
